@@ -1,7 +1,5 @@
 # Multilayer GNN for Grid Resilience Analysis
 
-# Multilayer GNN for Grid Resilience Analysis
-
 This repository contains the code and resources associated with the research paper **"Multilayer Graph Neural Networks for Enhancing Grid Resilience"**.  
 *(Preprint available soon: [Dummy Link](#))*
 
