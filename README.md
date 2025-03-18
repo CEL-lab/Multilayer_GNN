@@ -29,7 +29,7 @@ Each node is enriched with relevant features derived from grid attributes, histo
 
 ```
 multilayer-gnn-grid-resilience/
-├── Data/                  # Dataset (OGE incident data, anonymized/synthetic)
+├── Data/                  # Dataset (OGE incident data)
 ├── Codes/                 # Jupyter notebooks demonstrating workflows
 ├── results/               # Experimental results and performance metrics
 ├── requirements.txt       # Python dependencies
