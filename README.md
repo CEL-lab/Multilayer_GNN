@@ -5,7 +5,7 @@ This repository contains the code and resources associated with the research pap
 
 ## Overview
 
-We utilize incident data from OGE to construct a **multilayer network representation** of power grid infrastructure. Our approach employs **Multilayer Graph Neural Networks (GNNs)** to address key challenges in grid resilience, including:
+We utilize incident data from OGE to construct a **multilayer network representation** of substations in the power grid. Our approach employs **Multilayer Graph Neural Networks (GNNs)** to address key challenges in grid resilience, including:
 
 - **Predictive Maintenance**: Identifying substations requiring urgent maintenance.
 - **Incident Classification**: Categorizing incidents by type or severity.
