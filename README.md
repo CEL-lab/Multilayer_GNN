@@ -1,29 +1,54 @@
-# Multilayer_GNN
-# Multilayer Graph Neural Networks for Grid Resilience
+# Multilayer GNN for Grid Resilience Analysis
 
-This repository contains the code and resources associated with the research paper **"Multilayer Graph Neural Networks for Enhancing Grid Resilience"**.
+# Multilayer GNN for Grid Resilience Analysis
+
+This repository contains the code and resources associated with the research paper **"Multilayer Graph Neural Networks for Enhancing Grid Resilience"**.  
+*(Preprint available soon: [Dummy Link](#))*
 
 ## Overview
 
-We utilize incident data from OGE to construct a multilayer network representation of power grid infrastructure. Multilayer Graph Neural Networks (GNNs) are employed to address practical tasks to enhance grid resilience, including:
+We utilize incident data from OGE to construct a **multilayer network representation** of power grid infrastructure. Our approach employs **Multilayer Graph Neural Networks (GNNs)** to address key challenges in grid resilience, including:
 
 - **Predictive Maintenance**: Identifying substations requiring urgent maintenance.
 - **Incident Classification**: Categorizing incidents by type or severity.
 - **Substation Clustering**: Grouping substations based on similarity to inform targeted interventions.
 - **Risk Assessment (Regression)**: Estimating incident risk levels for proactive management.
 
+### Multilayer Network Construction
+
+The network is structured into **three interconnected layers**:
+
+- **Spatial Layer**: Represents the physical connectivity between substations.
+- **Temporal Layer**: Captures time-dependent relationships between grid events.
+- **Causal Layer**: Encodes causal dependencies inferred from historical data.
+
+Each node is enriched with relevant features derived from grid attributes, historical events, and environmental conditions.
+
+![Multilayer Network Visualization](network.png)
+
 ## Repository Structure
 
 ```
 multilayer-gnn-grid-resilience/
-├── data/                  # Dataset (OGE incident data, anonymized/synthetic)
-├── models/                # Multilayer GNN model implementations
-├── notebooks/             # Jupyter notebooks demonstrating workflows
-├── scripts/               # Training and evaluation scripts
+├── Data/                  # Dataset (OGE incident data, anonymized/synthetic)
+├── Codes/                 # Jupyter notebooks demonstrating workflows
 ├── results/               # Experimental results and performance metrics
 ├── requirements.txt       # Python dependencies
 └── LICENSE                # Repository license
 ```
+
+## Workflow
+
+### 1. Data Preprocessing
+- Raw incident and grid data are **cleaned and preprocessed** using the steps outlined in the **Preprocessing Notebook**.
+
+### 2. Multilayer Network Construction
+- The **Spatial, Temporal, and Causal layers** of the graph are constructed using the **Network Construction Notebook**.
+- Node features are assigned based on grid topology, incident history, and temporal patterns.
+
+### 3. Task-Specific Analysis
+- The constructed **graph network object** is **loaded across all tasks**, ensuring consistency in analysis.
+- Each ML pipeline (e.g., classification, clustering, regression) is implemented in separate notebooks.
 
 ## Requirements
 
@@ -34,7 +59,8 @@ multilayer-gnn-grid-resilience/
 - Scikit-learn
 - NumPy, Pandas
 
-Install required packages:
+Install dependencies using:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -57,11 +83,11 @@ jupyter notebook notebooks/Example_Workflow.ipynb
 If you use this work in your research, please cite:
 
 ```bibtex
-@article{yourname2024multilayer,
+@article{Mkazim, 
   title={Multilayer Graph Neural Networks for Enhancing Grid Resilience},
-  author={Your Name and Collaborators},
-  journal={Journal/Conference Name},
-  year={2024},
+  author={Harun Pirim},
+  journal={Elesvier},
+  year={2025},
 }
 ```
 
