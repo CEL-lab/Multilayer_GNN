@@ -1,7 +1,7 @@
 # Multilayer GNN for Grid Resilience Analysis
 
 This repository contains the code and resources associated with the research paper **"Multilayer Graph Neural Networks for Enhancing Grid Resilience"**.  
-*(Preprint: arXiv:2507.07298)*
+*(Preprint: [arXiv:2507.07298](https://arxiv.org/abs/2507.07298))*
 
 ## Overview
 
@@ -82,11 +82,12 @@ jupyter notebook notebooks/Example_Workflow.ipynb
 If you use this work in your research, please cite:
 
 ```bibtex
-@article{Mkazim, 
-  title={Multilayer Graph Neural Networks for Enhancing Grid Resilience},
-  author={Harun Pirim},
-  journal={Elesvier},
-  year={2025},
+@article{Mkazim2025,
+  title     = {Multilayer Graph Neural Networks for Enhancing Grid Resilience},
+  author    = {Muhammad Kazim and Harun Pirim and Chau Le and Trung Le and Om Prakash Yadav},
+  journal   = {arXiv preprint arXiv:2507.07298},
+  year      = {2025},
+  note      = {Available at \url{https://arxiv.org/abs/2507.07298}}
 }
 ```
 
