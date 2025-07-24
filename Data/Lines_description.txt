@@ -1,0 +1,37 @@
+
+This file lists spatial and operational information for 1,040 segments of high‑voltage transmission lines.  
+Each row represents a line section in the utility’s geographic information system (GIS).  
+The columns are described below:
+
+1. **X** – Longitude of the line segment’s representative point (decimal degrees, negative values indicate west longitude).
+
+2. **Y** – Latitude of the line segment’s representative point (decimal degrees, positive values indicate north latitude).
+
+3. **Z** – Elevation value (zero for all records; elevation is not provided).
+
+4. **Name** – Official name of the transmission line (e.g., “CIMARRON – SHEPARD AVE (APEX)”).
+
+5. **ALT_LINENA** – Alternate name for the line (when available).  
+
+6. **Const_Volt** – Design (construction) voltage rating of the line in kilovolts (kV).  Typical values range from 69 kV to 500 kV.
+
+7. **FID** – Unique feature identifier for the GIS record.
+
+8. **Field_1** – Duplicate of the line name used by the GIS software; often the same as the **Name** column.
+
+9. **LINENAME** – Name of the line (duplicate of **Name**; included for compatibility with other systems).
+
+10. **LINE_OPS1** – Primary operating description, including the operating voltage and terminal substations (e.g., “345 kV Cimarron – Shepard Ave (APEX)”).
+
+11. **LINE_OPS2** – Secondary operating description, often listing circuit numbers or specific buses for the line; may be blank.
+
+12. **MAINTAINED** – Organization responsible for maintaining the line (e.g., the utility itself or a foreign utility).  
+
+13. **OP_Volt** – Normal operating voltage of the line in kilovolts (kV).  Values range from 69 kV to 500 kV.
+
+14. **SECTION_ID** – Identifier for the specific section of the line.
+
+15. **SHAPE_LEN** – Length of the line section in the coordinate system units (often meters or feet, depending on GIS settings).
+
+16. **STATUS** – Status flag; 1 indicates an active line section.
+

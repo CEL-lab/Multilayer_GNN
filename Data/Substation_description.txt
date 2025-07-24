@@ -1,0 +1,61 @@
+
+This file contains geospatial and attribute information for 709 electrical substations.  
+Each row represents a substation site within the utility’s service territory.  
+The columns are described below:
+
+1. **X** – Longitude of the substation location (decimal degrees, west longitude is negative).
+
+2. **Y** – Latitude of the substation location (decimal degrees, positive values indicate north latitude).
+
+3. **Z** – Elevation value (zero for all records; elevation is not provided).
+
+4. **Name** – Name of the substation, typically including an identifier and station number (e.g., “Seminole Pump 7319”).
+
+5. **ADDRESSLIN** – Primary address line for the substation (street address or driving directions).  
+
+6. **ADDRESSL_1** – Additional address information, such as notes on feeders or ownership.
+
+7. **ADDRESSL_2** – Secondary address line; used for construction or metering notes.
+
+8. **ASBUILTSTA** – As‑built status indicator; often “A” for active or as‑built.
+
+9. **DRIVINGDIR** – Narrative driving directions to the substation.
+
+10. **FID** – Unique feature identifier for the GIS record.
+
+11. **Field_1** – Duplicate of the as‑built status used by the GIS software.
+
+12. **INSTALLATI** – Installation date of the substation (string format such as “1/1/99”).
+
+13. **LABELTEXT** – Text label used for map displays; usually the station name without the number.
+
+14. **MAINTAINED** – Organization responsible for maintaining the substation (e.g., the utility itself, Arkansas Valley Electric Cooperative (AVEC), Western Farmers Electric Cooperative (WFEC), etc.).
+
+15. **OWNER** – Ownership indicator (0 or 1), where 1 may represent ownership by the reporting utility and 0 indicates another owner.
+
+16. **PLANTCLASS** – Classification of the substation: ‘D’ for distribution, ‘T’ for transmission, ‘DD’ for dual‑purpose distribution, ‘P’ for pumping or plant, etc.
+
+17. **PLANTSTATU** – Operational status of the substation: ‘A’ for active, ‘S’ for spare, ‘H’ for historical or retired.
+
+18. **PMU** – Indicator (0 or 1) showing whether a phasor measurement unit is installed at the substation.
+
+19. **POINT_X** – Duplicate longitude coordinate used by the GIS system.
+
+20. **POINT_Y** – Duplicate latitude coordinate used by the GIS system.
+
+21. **STATIONNAM** – Numeric station name identifier (station number).
+
+22. **STATIONNUM** – Duplicate numeric station number (same as **STATIONNAM**).
+
+23. **SUBTYPECD** – Subtype code for the facility (0 or 1) used by the GIS system.
+
+24. **SYMBOLROTA** – Rotation angle (degrees) for the station’s symbol on maps.
+
+25. **TOWN** – Town or locality where the substation is located; blank for rural stations.
+
+26. **Voltage** – Nominal operating voltage of the substation in kilovolts (kV).  Values range from 0 kV to 500 kV.
+
+27. **WORKFLOWST** – Workflow status code; 0 indicates normal status.
+
+28. **WORKFUNCTI** – Workflow function code; 0 indicates a base function for the GIS record.
+

@@ -1,0 +1,109 @@
+
+This file contains detailed information about the outage incidents recorded by OGE.  
+Each record describes an event where power was interrupted and restored.  
+The columns are described below:
+
+1. **Job Display ID** – Unique alphanumeric identifier assigned to each outage job/incident record.
+
+2. **CAD_ID** – Identifier from the Computer Aided Dispatch system used by operations; may be blank when no dispatch record exists.
+
+3. **Job Region** – Name of the region of the service territory in which the outage occurred (e.g., “METRO EAST,” “NORTHWEST”).
+
+4. **Job Area (DISTRICT)** – District or area within the region where the outage took place.
+
+5. **Job Substation** – Code and name of the substation associated with the outage (format: station number:name).
+
+6. **Job Feeder** – Identifier of the distribution feeder on which the event occurred (usually feeder name followed by a number).
+
+7. **Feeder ID** – Numeric identifier for the feeder.
+
+8. **Job OFF Time** – Timestamp (date and time) when the outage began.
+
+9. **Job ON Time** – Timestamp when power was restored to the affected customers.
+
+10. **Job Duration Mins** – Duration of the outage in minutes (difference between ON and OFF times).
+
+11. **Custs Affected** – Number of customers affected by the outage.
+
+12. **Call Qty** – Number of calls received by the utility about this incident (customer outage or trouble calls).
+
+13. **CMI (Customer Minutes of Interruption)** – Total minutes of interruption experienced by customers, calculated by multiplying the number of customers affected by the duration of the outage in minutes.  This quantity forms the numerator for reliability indices such as SAIDIhttps://powerquality.blog/2021/05/28/part-2-reliability-definition-and-discussion/#:~:text=,by%20the%20total%20number%20of.
+
+14. **Cause ID** – Numeric code representing the cause category of the outage.
+
+15. **Cause Desc** – Description of the cause (e.g., “DETERIORATION,” “TREES : GROW IN,” “SUBSTATION OPERATION”).
+
+16. **Equip ID** – Numeric identifier for the equipment associated with the outage.
+
+17. **Equip Desc** – Description of the equipment involved (e.g., “TRANSFORMER OH,” “JUMPER”).
+
+18. **Job City** – City or town where the outage occurred.
+
+19. **Device Address** – Street address or location description of the device involved in the outage.
+
+20. **CMI Category** – Category indicating how the CMI should be treated (e.g., normal, planned, cause exclusion, equipment exclusion, momentary).  
+
+21. **Exclude CMI?** – Flag (“YES” or “NO”) indicating whether this incident’s CMI should be excluded from reliability index calculations.
+
+22. **Job QA?** – Flag indicating whether the job was selected for quality assurance review.
+
+23. **Event Exclusion?** – Flag indicating whether the entire event should be excluded from reliability reporting.
+
+24. **Total System Premises** – Total number of premises (customers) served by the entire electric system.
+
+25. **Total Region Premises** – Total number of premises in the region where the outage occurred.
+
+26. **Total Area Premises** – Total number of premises in the area (district) where the outage occurred.
+
+27. **Total Subst Premises** – Total number of premises served by the substation associated with the job.
+
+28. **Total Feeder Premises** – Total number of premises served by the feeder.
+
+29. **Job SAIDI** – Contribution of this outage to the System Average Interruption Duration Index.  SAIDI represents the average outage duration per customer and is calculated by dividing the total duration of sustained interruptions by the total number of customershttps://www.energyknowledgebase.com/post/electric-reliability-indices#:~:text=System%20Average%20Interruption%20Duration%20Index,SAIDI.
+
+30. **Job SAIFI** – Contribution of this outage to the System Average Interruption Frequency Index.  SAIFI measures the average number of interruptions per customerhttps://www.energyknowledgebase.com/post/electric-reliability-indices#:~:text=SAIFI%20is%20the%20average%20number,terms%20of%20interruptions%20per%20year.
+
+31. **Job CAIDI** – Customer Average Interruption Duration Index for this job.  CAIDI measures the average duration of sustained interruptions for customers experiencing an outagehttps://www.energyknowledgebase.com/post/electric-reliability-indices#:~:text=Consumer%20Average%20Interruption%20Duration%20Index,CAIDI.
+
+32. **Job ASAI** – Average Service Availability Index for this job.  ASAI represents the ratio of the total number of customer‑hours that service was available to the total customer‑hours demandedhttps://www.energyknowledgebase.com/post/electric-reliability-indices#:~:text=ASAI%20is%20the%20ratio%20of,called%20the%20service%20reliability%20index.  Values near 1 indicate high availability.
+
+33. **Call Code** – Code indicating the type of customer calls received (internal classification).
+
+34. **Extent** – Description of the portion of the system affected by the event (e.g., “Secondary,” “Mainline,” “Load,” “Customer,” “Feeder”).
+
+35. **STRCTUR_NO/Job Device ID** – Structure number or device identifier associated with the outage (e.g., pole or transformer structure ID).  
+
+36. **Device Type** – Type of device on which the outage occurred (e.g., “Fuse,” “Recloser,” “Switch,” “Load”).
+
+37. **Dev Subtype** – Sub‑type classification of the device (e.g., types of transformers or fuses).
+
+38. **Lead Crew** – Name of the crew leader assigned to restore the outage.
+
+39. **Lead Crew Phone** – Phone number of the lead crew contact.
+
+40. **Region SAIDI** – Aggregate SAIDI for the region at the time of the event (blank in this data set).
+
+41. **Area SAIDI** – Aggregate SAIDI for the area at the time of the event (blank in this data set).
+
+42. **Subst SAIDI** – Aggregate SAIDI for the substation at the time of the event (blank in this data set).
+
+43. **Feeder SAIDI** – Aggregate SAIDI for the feeder at the time of the event (blank in this data set).
+
+44. **AM Notes** – Free‑text notes from asset management staff describing special circumstances or manual updates.
+
+45. **OGE Causes** – High‑level cause category used by the utility (e.g., “Equipment,” “Vegetation,” “Animals,” “Weather,” or “Cause Exclusion”).
+
+46. **Major Storm Event Y (Yes) or N (No)** – Indicates whether the outage occurred during a major storm event.
+
+47. **Distribution, Substation, Transmission** – Classification of the system element involved.  Transmission lines carry electricity at high voltages (>69 kV) over long distances to substations, while distribution lines carry electricity at lower voltages (<10 kV) over shorter distances to customershttps://www.tanocable.com/news/262.html#:~:text=What%20is%20a%20Transmission%20Line%3F,is%20more%20than%2069%20kV.
+
+48. **Transmission Voltage (69 kV, 138 kV, 161 kV) feeding distribution substation** – Nominal voltage level of the transmission source feeding the distribution substation associated with the outage.
+
+49. **Month/Day/Year** – Date (MM/DD/YYYY) of the outage, extracted from the off/on times.
+
+50. **Year** – Four‑digit calendar year in which the outage occurred (all records in this file are 2020).
+
+51. **Equipment Desc that should be excluded from reported indices** – Placeholder for indicating equipment types that should be excluded from reliability indices (all values are blank in this data set).
+
+52. **Ark Grid Mod or OK Grid Enhancement Circuits** – Indicates whether the outage occurred on an Arkansas grid modernization circuit or an Oklahoma grid enhancement circuit; values such as “Ark – Series 2” or “OK – 2021” specify the program and series.
+
